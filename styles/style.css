@@ -5,6 +5,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -44,11 +47,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: rgb(113, 114, 128); /* cor do texto ao passar o mouse */
+    color: rgb(113, 114, 128);
 }
 
 section {
     padding: 40px 0;
+    flex-grow: 1; 
 }
 
 section h2 {
