@@ -1,0 +1,10 @@
+#sobre {
+    background-color: #fff;
+    text-align: center;
+}
+
+#sobre img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}

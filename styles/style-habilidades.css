@@ -1,0 +1,34 @@
+#habilidades {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+#habilidades h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* auto-ajuste em relação a tela */
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.chip {
+    display: inline-block;
+    background-color: #333; /* cor do chip */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chip:hover {
+    background-color: rgb(16, 30, 109); /* muda a cor no hover */
+}

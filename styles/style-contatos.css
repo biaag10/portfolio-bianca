@@ -1,0 +1,20 @@
+#contatos {
+    background-color: #fff;
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icon i {
+    font-size: 30px; /* tamanho do ícone */
+    color: #333;     /* cor do ícone */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon i:hover {
+    transform: scale(1.1); /* efeito para aumentar ao passar o mouse */
+    color:rgb(16, 30, 109); /* muda a cor do ícone quando passa o mouse */
+}
