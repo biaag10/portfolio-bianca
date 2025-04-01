@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,12 @@
     <link rel="stylesheet" href="styles/style-sobre.css">
     <link rel="stylesheet" href="styles/style-habilidades.css">
     <link rel="stylesheet" href="styles/style-projetos.css">
+    <link rel="stylesheet" href="styles/style-projetos-habilidades.css">
     <link rel="stylesheet" href="styles/style-contatos.css">
     <!-- link para usar icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
 
     <!-- header -->
@@ -22,7 +25,9 @@
             <nav>
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades Técnicas</a></li>
+                    <li><a href="#projetos">Projetos no GitHub</a></li>
+                    <li><a href="#projetos-habilidades">Habilidades Adquiridas em Projetos</a></li>
                     <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
@@ -34,7 +39,10 @@
         <div class="container">
             <h2>Sobre Mim</h2>
             <img src="assets/portfolio-bianca.svg" alt="Foto de Bianca">
-            <p>Sou estudante do <strong>7° semestre de Engenharia de Computação na Universidade SENAI CIMATEC</strong>, onde venho aprofundando meus conhecimentos em tecnologia e inovação. Desde o início da minha trajetória acadêmica, sempre busquei experiências que me permitissem aprender além da sala de aula, aplicando a teoria na prática e adquirindo vivência real na área.</p>
+            <p>Sou estudante do <strong>7° semestre de Engenharia de Computação na Universidade SENAI CIMATEC</strong>,
+                onde venho aprofundando meus conhecimentos em tecnologia e inovação. Desde o início da minha trajetória
+                acadêmica, sempre busquei experiências que me permitissem aprender além da sala de aula, aplicando a
+                teoria na prática e adquirindo vivência real na área.</p>
         </div>
     </section>
 
@@ -59,34 +67,158 @@
                 <div class="chip">Figma</div>
             </div>
         </div>
-    </section>    
+    </section>
 
     <!-- seção de projetos -->
     <section id="projetos">
         <div class="container">
-            <h2>Projetos</h2>
+            <h2>Projetos no GitHub</h2>
+
+            <!-- projeto RankEat -->
             <div class="projeto">
-                <h3>EconoTrack</h3>
-                <p>Sistema de Gestão Financeira de uma casa.</p>
+                <div class="projeto-conteudo">
+                    <div class="projeto-imagem">
+                        <img src="./assets/project-rankeat.png" alt="Ticket Generator" />
+                    </div>
+                    <div class="projeto-descricao">
+                        <h3>RankEat</h3>
+                        <p>Gerador de ticket com envio de confirmação por e-mail.</p>
+                        <p>Tecnologias: React, TypeScript e Vite.</p>
+                        <a href="https://github.com/biaag10/RankEat" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- projeto do ticket -->
             <div class="projeto">
-                <h3>Aplicativo Mobile</h3>
-                <p>Aplicativo que recebe dados, por meio do bluetooth, vindos de um ESP-32, tem a capacidade de recortar, apagar e salvar em um relatório. Esse relatório pode ser enviado por e-mail.</p>
+                <div class="projeto-conteudo">
+                    <div class="projeto-imagem">
+                        <img src="./assets/project-generator-ticket.png" alt="Ticket Generator" />
+                    </div>
+                    <div class="projeto-descricao">
+                        <h3>Ticket Generator</h3>
+                        <p>Gerador de ticket com envio de confirmação por e-mail.</p>
+                        <p>Tecnologias: HTML, CSS e JavaScript.</p>
+                        <a href="https://github.com/biaag10/page-ticket-generator.git" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- projeto da calculadora de idade -->
             <div class="projeto">
-                <h3>Software de Agendamento</h3>
-                <p>Desenvolvimento, full stack, de um software de agendamento utilizando Next.js para o Front-End e Nest.js, que utiliza PostgreSQL como banco de dados, integradoVcom Prisma, para o Back-End. Com integração com a API do Calendário do Google. Além de testes para validação das funcionalidades do software.</p>
+                <div class="projeto-conteudo">
+                    <div class="projeto-imagem">
+                        <img src="./assets/project-age-calculator.png" alt="Age Calculator" />
+                    </div>
+                    <div class="projeto-descricao">
+                        <h3>Age Calculator</h3>
+                        <p>Calculadora de idade (anos, meses e dias).</p>
+                        <p>Tecnologias: React.js, Typescript, JavaScript e Tailwind.</p>
+                        <a href="https://github.com/biaag10/calculadora-de-idade.git" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- projeto RegisTree -->
             <div class="projeto">
-                <h3>Análise de Dados</h3>
-                <p>Utilização do Python como ferramenta principal para analisar dados desorganizados, realizar cálculos estatísticos e gerar gráficos representativos, facilitando a identificação de padrões, tendências e insights relevantes para tomada de decisões, com a utilização de bibliotecas como Pandas, NumPy e Matplotlib. </p>
+                <div class="projeto-conteudo">
+                    <div class="projeto-imagem">
+                        <img src="./assets/project-registree.png" alt="RegisTree" />
+                    </div>
+                    <div class="projeto-descricao">
+                        <h3>RegisTree</h3>
+                        <p>Sistema de cadastro, listagem e busca de usuários (com armazenamento local).</p>
+                        <p>Tecnologias: C# .NET.</p>
+                        <a href="https://github.com/biaag10/RegisTree.git" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
             </div>
+
+            <!-- projeto EconoTrack -->
             <div class="projeto">
-                <h3>Programação Orientada a Objetos</h3>
-                <p>Utilização de Java para construir aplicações e programa para resolução de problemas.</p>
+                <div class="projeto-conteudo">
+                    <div class="projeto-imagem">
+                        <img src="./assets/project-econotrack.png" alt="EconoTrack" />
+                    </div>
+                    <div class="projeto-descricao">
+                        <h3>EconoTrack</h3>
+                        <p>Sistema de Gestão Financeira de uma casa.</p>
+                        <p>Tecnologias: Next.js e C# .NET.</p>
+                        <a href="https://github.com/biaag10/software-EconoTrack-front.git" target="_blank">Front-End:
+                            Ver no GitHub</a>
+                        <br>
+                        <a href="https://github.com/biaag10/software-agendamento-NG7-backend.git"
+                            target="_blank">Back-End: Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- seção de habilidades adquiridas em projetos-->
+    <section id="projetos-habilidades">
+        <div class="container">
+            <h2>Habilidades Adquiridas em Projetos</h2>
+            <!-- tipo de projeto 1 -->
+            <div class="flashcards-container">
+                <!-- flashcard 1: análise de dados -->
+                <div class="flashcard">
+                    <div class="front">
+                        <h4>Análise de Dados</h4>
+                    </div>
+                    <div class="back">
+                        <p>Utilização do Python como ferramenta principal para analisar dados desorganizados, realizar cálculos
+                            estatísticos e gerar gráficos representativos, facilitando a identificação de padrões, tendências e
+                            insights relevantes para tomada de decisões, com a utilização de bibliotecas como Pandas, NumPy e
+                            Matplotlib. <br> <br> Experiência adquirida na disciplina de Análise de Dados na
+                            Universidade Senai Cimatec. <br> <br> Tecnologias: Python, Pandas, NumPy e Matplotlib.</p>
+                    </div>
+                </div>
+
+                <!-- flashcard 2: desenvolvimento mobile -->
+                <div class="flashcard">
+                    <div class="front">
+                        <h4>Desenvolvimento Mobile</h4>
+                    </div>
+                    <div class="back">
+                        <p>Aplicativo que recebe dados, por meio do bluetooth, vindos de um ESP-32, tem a capacidade de
+                            recortar, apagar e salvar em um relatório. Esse relatório pode ser enviado por e-mail. <br> <br> Projeto confidencial, pois foi desenvolvido para um cliente pela CIMATEC Jr. <br> <br> Tecnologias: React Native. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linha 2 de Projetos -->
+            <div class="flashcards-container">
+                <!-- flashcard 3: desenvolvimento full stack -->
+                <div class="flashcard">
+                    <div class="front">
+                        <h4>Desenvolvimento Full Stack</h4>
+                    </div>
+                    <div class="back">
+                        <p>Desenvolvimento, full stack, de um software de agendamento utilizando Next.js para o Front-End e
+                            Nest.js, que utiliza PostgreSQL como banco de dados, integradoVcom Prisma, para o Back-End. Com
+                            integração com a API do Calendário do Google. Além de testes para validação das funcionalidades do
+                            software. <br> <br> Projeto confidencial, pois foi desenvolvido internamente para NG7 Consultoria, durante um período de
+                            estágio. <br> <br> Tecnologias: Next.js, Nest.js, Tailwind, Prisma, PostgreSQL e API Google Calendar. </p>
+                    </div>
+                </div>
+
+                <!-- flashcard 4: programação orientada a objetos -->
+                <div class="flashcard">
+                    <div class="front">
+                        <h4>Programação Orientada a Objetos</h4>
+                    </div>
+                    <div class="back">
+                        <p>Utilização de Java para construir aplicações e programa para resolução de problemas.
+                        <br> <br> Experiência adquirida por meio da disciplina de Análise de Dados, oferecida pela Universidade Senai
+                        Cimatec. <br> <br> Tecnologias: Java.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- seção de contatos -->
     <section id="contatos">
@@ -114,5 +246,8 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

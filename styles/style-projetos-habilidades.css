@@ -1,0 +1,79 @@
+#projetos-habilidades {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+#projetos-habilidades h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.flashcards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas por linha */
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.flashcard {
+    width: 100%;
+    height: 250px;
+    perspective: 1000px; /* Cria a perspectiva para o efeito 3D */
+}
+
+.flashcard .front,
+.flashcard .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Oculta o verso quando vira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flashcard .front {
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.flashcard .back {
+    background-color: rgb(16, 30, 109);
+    color: #fff;
+    transform: rotateY(180deg); /* Vira o verso */
+    padding: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.flashcard:hover .front {
+    transform: rotateY(180deg); /* Vira o card quando o mouse passar */
+}
+
+.flashcard:hover .back {
+    transform: rotateY(0deg); /* Torna visível o verso ao passar o mouse */
+}
+
+.flashcard.flipped .front {
+    transform: rotateY(180deg); /* Vira o card quando estiver com a classe 'flipped' */
+}
+
+.flashcard.flipped .back {
+    transform: rotateY(0deg); /* Torna visível o verso ao adicionar a classe 'flipped' */
+}
+
+@media (max-width: 768px) {
+    .flashcards-container {
+        grid-template-columns: 1fr; /* Apenas uma coluna em telas menores */
+    }
+
+    .flashcard .front {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+}
