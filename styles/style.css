@@ -39,15 +39,31 @@ header nav ul li {
     margin: 0 15px;
 }
 
-
 header nav ul li a {
+    position: relative;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    padding-bottom: 5px; /* adiciona um pequeno espaço para a linha abaixo */
 }
 
 header nav ul li a:hover {
-    color: rgb(113, 114, 128);
+    color: rgb(113, 114, 128); /* muda a cor do texto no hover */
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* espessura da linha */
+    background-color: rgb(113, 114, 128); /* cor da linha */
+    transition: width 0.3s ease; /* transição suave para a linha */
+}
+
+header nav ul li a:hover::after {
+    width: 100%; /* quando passar o mouse, a linha cresce até o tamanho total */
 }
 
 section {
@@ -71,4 +87,3 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
-
