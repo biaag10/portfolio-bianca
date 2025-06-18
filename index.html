@@ -2,251 +2,221 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Bianca</title>
-    <!-- estilos para cada parte -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/style-sobre.css">
-    <link rel="stylesheet" href="styles/style-habilidades.css">
-    <link rel="stylesheet" href="styles/style-projetos.css">
-    <link rel="stylesheet" href="styles/style-projetos-habilidades.css">
-    <link rel="stylesheet" href="styles/style-contatos.css">
-    <!-- link para usar icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Bianca Andrade Galvão</title>
+  <!-- Google Fonts: Poppins and Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
+  <header>
+    <div class="container">
+      <h1>Bianca Andrade Galvão</h1>
+      <button aria-label="Abrir menu" class="menu-toggle" id="menu-toggle" aria-expanded="false"
+        aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-navigation" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades Técnicas</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#projetos-habilidades">Projetos & Habilidades</a>
+        <a href="#contatos">Contatos</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- header -->
-    <header>
-        <div class="container">
-            <h1>Bianca Andrade Galvão - Programadora Full Stack</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades Técnicas</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#projetos-habilidades">Habilidades - Projetos</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- seção sobre -->
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre Mim</h2>
-            <img src="assets/portfolio-bianca.svg" alt="Foto de Bianca">
-            <p>Sou estudante do <strong>7° semestre de Engenharia de Computação na Universidade SENAI CIMATEC</strong>,
-                onde venho aprofundando meus conhecimentos em tecnologia e inovação. Desde o início da minha trajetória
-                acadêmica, sempre busquei experiências que me permitissem aprender além da sala de aula, aplicando a
-                teoria na prática e adquirindo vivência real na área.</p>
-        </div>
+  <main>
+    <section id="sobre" tabindex="0">
+      <h2>Sobre Mim</h2>
+      <img src="./assets/portfolio-bianca.svg" alt="Foto de Bianca Andrade Galvão" />
+      <p>Sou estudante do <strong>7° semestre de Engenharia de Computação na Universidade SENAI CIMATEC</strong>, onde
+        venho aprofundando meus conhecimentos em tecnologia e inovação. Desde o início da minha trajetória acadêmica,
+        sempre busquei experiências que me permitissem aprender além da sala de aula, aplicando a teoria na prática e
+        adquirindo vivência real na área.</p>
     </section>
 
-    <!-- seção de habilidades -->
-    <section id="habilidades">
-        <div class="container">
-            <h2>Habilidades Técnicas</h2>
-            <div class="habilidades-container">
-                <div class="chip">C / C++</div>
-                <div class="chip">Python</div>
-                <div class="chip">HTML</div>
-                <div class="chip">CSS</div>
-                <div class="chip">JavaScript</div>
-                <div class="chip">React.js</div>
-                <div class="chip">TypeScript</div>
-                <div class="chip">Tailwind.CSS</div>
-                <div class="chip">Next.js</div>
-                <div class="chip">Nest.js</div>
-                <div class="chip">Prisma</div>
-                <div class="chip">PostgreSQL</div>
-                <div class="chip">SQL</div>
-                <div class="chip">Figma</div>
-            </div>
-        </div>
+    <section id="habilidades" tabindex="0">
+      <h2>Habilidades Técnicas</h2>
+      <div class="habilidades-container" role="list">
+        <div class="chip" role="listitem">C / C++</div>
+        <div class="chip" role="listitem">Python</div>
+        <div class="chip" role="listitem">HTML</div>
+        <div class="chip" role="listitem">CSS</div>
+        <div class="chip" role="listitem">JavaScript</div>
+        <div class="chip" role="listitem">React.js</div>
+        <div class="chip" role="listitem">TypeScript</div>
+        <div class="chip" role="listitem">Tailwind.CSS</div>
+        <div class="chip" role="listitem">Next.js</div>
+        <div class="chip" role="listitem">Nest.js</div>
+        <div class="chip" role="listitem">Prisma</div>
+        <div class="chip" role="listitem">PostgreSQL</div>
+        <div class="chip" role="listitem">SQL</div>
+        <div class="chip" role="listitem">Figma</div>
+      </div>
     </section>
 
-    <!-- seção de projetos -->
-    <section id="projetos">
-        <div class="container">
-            <h2>Projetos no GitHub</h2>
+    <section id="projetos" tabindex="0">
+      <h2>Projetos no GitHub</h2>
 
-            <!-- projeto RankEat -->
-            <div class="projeto">
-                <div class="projeto-conteudo">
-                    <div class="projeto-imagem">
-                        <img src="./assets/project-rankeat.png" alt="Ticket Generator" />
-                    </div>
-                    <div class="projeto-descricao">
-                        <h3>RankEat</h3>
-                        <p>Software de rankeamento de restaurantes de comida.</p>
-                        <p>Tecnologias: React, TypeScript e Vite.</p>
-                        <a href="https://github.com/biaag10/RankEat" target="_blank">Ver no GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- projeto do ticket -->
-            <div class="projeto">
-                <div class="projeto-conteudo">
-                    <div class="projeto-imagem">
-                        <img src="./assets/project-generator-ticket.png" alt="Ticket Generator" />
-                    </div>
-                    <div class="projeto-descricao">
-                        <h3>Ticket Generator</h3>
-                        <p>Gerador de ticket com envio de confirmação por e-mail.</p>
-                        <p>Tecnologias: HTML, CSS e JavaScript.</p>
-                        <a href="https://github.com/biaag10/page-ticket-generator.git" target="_blank">Ver no GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- projeto da calculadora de idade -->
-            <div class="projeto">
-                <div class="projeto-conteudo">
-                    <div class="projeto-imagem">
-                        <img src="./assets/project-age-calculator.png" alt="Age Calculator" />
-                    </div>
-                    <div class="projeto-descricao">
-                        <h3>Age Calculator</h3>
-                        <p>Calculadora de idade (anos, meses e dias).</p>
-                        <p>Tecnologias: React.js, Typescript, JavaScript e Tailwind.</p>
-                        <a href="https://github.com/biaag10/calculadora-de-idade.git" target="_blank">Ver no GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- projeto RegisTree -->
-            <div class="projeto">
-                <div class="projeto-conteudo">
-                    <div class="projeto-imagem">
-                        <img src="./assets/project-registree.png" alt="RegisTree" />
-                    </div>
-                    <div class="projeto-descricao">
-                        <h3>RegisTree</h3>
-                        <p>Sistema de cadastro, listagem e busca de usuários (com armazenamento local).</p>
-                        <p>Tecnologias: C# .NET.</p>
-                        <a href="https://github.com/biaag10/RegisTree.git" target="_blank">Ver no GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- projeto EconoTrack -->
-            <div class="projeto">
-                <div class="projeto-conteudo">
-                    <div class="projeto-imagem">
-                        <img src="./assets/project-econotrack.png" alt="EconoTrack" />
-                    </div>
-                    <div class="projeto-descricao">
-                        <h3>EconoTrack</h3>
-                        <p>Sistema de Gestão Financeira de uma casa.</p>
-                        <p>Tecnologias: Next.js e C# .NET.</p>
-                        <a href="https://github.com/biaag10/software-EconoTrack-front.git" target="_blank">Front-End:
-                            Ver no GitHub</a>
-                        <br>
-                        <a href="https://github.com/biaag10/software-agendamento-NG7-backend.git"
-                            target="_blank">Back-End: Ver no GitHub</a>
-                    </div>
-                </div>
-            </div>
-
+      <article class="projeto">
+        <div class="projeto-imagem">
+          <img src="./assets/project-rankeat.png"
+            alt="Interface do projeto RankEat mostrando ranking de restaurantes com design moderno e colorido" />
         </div>
+        <div class="projeto-descricao">
+          <h3>RankEat</h3>
+          <p>Software de rankeamento de restaurantes de comida.</p>
+          <p><strong>Tecnologias:</strong> React, TypeScript e Vite.</p>
+          <a href="https://github.com/biaag10/RankEat" target="_blank" rel="noreferrer noopener"
+            aria-label="Ver projeto RankEat no GitHub">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="projeto-imagem">
+          <img src="./assets/project-generator-ticket.png"
+            alt="Interface do projeto Ticket Generator com layout e botões para geração de tickets" />
+        </div>
+        <div class="projeto-descricao">
+          <h3>Ticket Generator</h3>
+          <p>Gerador de ticket com envio de confirmação por e-mail.</p>
+          <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript.</p>
+          <a href="https://github.com/biaag10/page-ticket-generator.git" target="_blank" rel="noreferrer noopener"
+            aria-label="Ver projeto Ticket Generator no GitHub">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="projeto-imagem">
+          <img src="./assets/project-age-calculator.png"
+            alt="Interface do projeto Age Calculator com seleção de data e resultado do cálculo" />
+        </div>
+        <div class="projeto-descricao">
+          <h3>Age Calculator</h3>
+          <p>Calculadora de idade (anos, meses e dias).</p>
+          <p><strong>Tecnologias:</strong> React.js, Typescript, JavaScript e Tailwind.</p>
+          <a href="https://github.com/biaag10/calculadora-de-idade.git" target="_blank" rel="noreferrer noopener"
+            aria-label="Ver projeto Age Calculator no GitHub">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="projeto-imagem">
+          <img src="./assets/project-registree.png"
+            alt="Tela do projeto RegisTree mostrando listagem e cadastro de usuários" />
+        </div>
+        <div class="projeto-descricao">
+          <h3>RegisTree</h3>
+          <p>Sistema de cadastro, listagem e busca de usuários (com armazenamento local).</p>
+          <p><strong>Tecnologias:</strong> C# .NET.</p>
+          <a href="https://github.com/biaag10/RegisTree.git" target="_blank" rel="noreferrer noopener"
+            aria-label="Ver projeto RegisTree no GitHub">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="projeto-imagem">
+          <img src="./assets/project-econotrack.png"
+            alt="Tela do aplicativo EconoTrack mostrando dashboard financeiro" />
+        </div>
+        <div class="projeto-descricao">
+          <h3>EconoTrack</h3>
+          <p>Sistema de Gestão Financeira de uma casa.</p>
+          <p><strong>Tecnologias:</strong> Next.js e C# .NET.</p>
+          <a href="https://github.com/biaag10/software-EconoTrack-front.git" target="_blank" rel="noreferrer noopener"
+            aria-label="Ver front-end do EconoTrack no GitHub">Front-End: Ver no GitHub</a><br />
+          <a href="https://github.com/biaag10/software-agendamento-NG7-backend.git" target="_blank"
+            rel="noreferrer noopener" aria-label="Ver back-end do EconoTrack no GitHub">Back-End: Ver no GitHub</a>
+        </div>
+      </article>
     </section>
 
-    <!-- seção de habilidades adquiridas em projetos-->
-    <section id="projetos-habilidades">
-        <div class="container">
-            <h2>Habilidades Adquiridas em Projetos</h2>
-            <!-- tipo de projeto 1 -->
-            <div class="flashcards-container">
-                <!-- flashcard 1: análise de dados -->
-                <div class="flashcard">
-                    <div class="front">
-                        <h4>Análise de Dados</h4>
-                    </div>
-                    <div class="back">
-                        <p>Utilização do Python como ferramenta principal para analisar dados desorganizados, realizar cálculos
-                            estatísticos e gerar gráficos representativos, facilitando a identificação de padrões, tendências e
-                            insights relevantes para tomada de decisões, com a utilização de bibliotecas como Pandas, NumPy e
-                            Matplotlib. <br> <br> Experiência adquirida na disciplina de Análise de Dados na
-                            Universidade Senai Cimatec. <br> <br> Tecnologias: Python, Pandas, NumPy e Matplotlib.</p>
-                    </div>
-                </div>
-
-                <!-- flashcard 2: desenvolvimento mobile -->
-                <div class="flashcard">
-                    <div class="front">
-                        <h4>Desenvolvimento Mobile</h4>
-                    </div>
-                    <div class="back">
-                        <p>Aplicativo que recebe dados, por meio do bluetooth, vindos de um ESP-32, tem a capacidade de
-                            recortar, apagar e salvar em um relatório. Esse relatório pode ser enviado por e-mail. <br> <br> Projeto confidencial, pois foi desenvolvido para um cliente pela CIMATEC Jr. <br> <br> Tecnologias: React Native. </p>
-                    </div>
-                </div>
+    <section id="projetos-habilidades" tabindex="0">
+      <h2>Habilidades Adquiridas em Projetos</h2>
+      <div class="flashcards-container" role="list">
+        <div class="flashcard" role="listitem" tabindex="0" aria-live="polite" aria-label="Análise de Dados">
+          <div class="flashcard-inner">
+            <div class="front">
+              <h3>Análise de Dados</h3>
             </div>
-
-            <!-- Linha 2 de Projetos -->
-            <div class="flashcards-container">
-                <!-- flashcard 3: desenvolvimento full stack -->
-                <div class="flashcard">
-                    <div class="front">
-                        <h4>Desenvolvimento Full Stack</h4>
-                    </div>
-                    <div class="back">
-                        <p>Desenvolvimento, full stack, de um software de agendamento utilizando Next.js para o Front-End e
-                            Nest.js, que utiliza PostgreSQL como banco de dados, integradoVcom Prisma, para o Back-End. Com
-                            integração com a API do Calendário do Google. Além de testes para validação das funcionalidades do
-                            software. <br> <br> Projeto confidencial, pois foi desenvolvido internamente para NG7 Consultoria, durante um período de
-                            estágio. <br> <br> Tecnologias: Next.js, Nest.js, Tailwind, Prisma, PostgreSQL e API Google Calendar. </p>
-                    </div>
-                </div>
-
-                <!-- flashcard 4: programação orientada a objetos -->
-                <div class="flashcard">
-                    <div class="front">
-                        <h4>Programação Orientada a Objetos</h4>
-                    </div>
-                    <div class="back">
-                        <p>Utilização de Java para construir aplicações e programa para resolução de problemas.
-                        <br> <br> Experiência adquirida por meio da disciplina de Análise de Dados, oferecida pela Universidade Senai
-                        Cimatec. <br> <br> Tecnologias: Java.</p>
-                    </div>
-                </div>
+            <div class="back">
+              <p>Python com a utilização de bibliotecas como Pandas, NumPy e Matplotlib.</p>
             </div>
+          </div>
         </div>
+        <div class="flashcard" role="listitem" tabindex="0" aria-live="polite" aria-label="Desenvolvimento Mobile">
+          <div class="flashcard-inner">
+            <div class="front">
+              <h3>Desenvolvimento Mobile</h3>
+            </div>
+            <div class="back">
+              <p>Aplicativo que recebe dados, por meio do bluetooth, vindos de um ESP-32, integrado a uma API de e-mail.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard" role="listitem" tabindex="0" aria-live="polite" aria-label="Desenvolvimento Full Stack">
+          <div class="flashcard-inner">
+            <div class="front">
+              <h3>Desenvolvimento Full Stack</h3>
+            </div>
+            <div class="back">
+              <p>Desenvolvimento de um software de agendamento com Next.js,Front-End, e Nest.js, com PostgreSQL como
+                banco de dados integrado com Prisma, Back-End. Integração com a API do Calendário do Google.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard" role="listitem" tabindex="0" aria-live="polite"
+          aria-label="Programação Orientada a Objetos">
+          <div class="flashcard-inner">
+            <div class="front">
+              <h3>Programação Orientada a Objetos</h3>
+            </div>
+            <div class="back">
+              <p>Utilização de Java para construir aplicações e programa para resolução de
+                problemas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-    <!-- seção de contatos -->
-    <section id="contatos">
-        <div class="container">
-            <h2>Contatos</h2>
-            <a href="https://www.linkedin.com/in/bianca-andrade-galvão/" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i> <!-- ícone do linkedIn -->
-            </a>
-            <a href="https://github.com/biaag10" target="_blank" class="social-icon">
-                <i class="fab fa-github"></i> <!-- ícone do github -->
-            </a>
-            <a href="mailto:biancandradegalvao@outlook.com" class="social-icon">
-                <i class="fas fa-envelope"></i> <!-- ícone de e-mail -->
-            </a>
-            <a href="https://wa.me/5571996898570" target="_blank" class="social-icon">
-                <i class="fab fa-whatsapp"></i> <!-- ícone do whatsapp -->
-            </a>
-        </div>
+    <section id="contatos" tabindex="0">
+      <h2>Contatos</h2>
+      <a href="https://www.linkedin.com/in/bianca-andrade-galvão/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/biaag10" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:biancandradegalvao@outlook.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://wa.me/5571996898570" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </section>
 
-    <!-- footer -->
+  </main>
+  <main>
+
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Bianca Andrade Galvão | Todos os direitos reservados</p>
-        </div>
+      <p>© 2025 Bianca Andrade Galvão | Todos os direitos reservados</p>
     </footer>
-
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="/script.js"></script>
 
 </body>
 
